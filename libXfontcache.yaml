@@ -1,0 +1,24 @@
+Name: libXfontcache
+Summary: X.Org X11 libXfontcache runtime library
+Description: X-TrueType font cache extension client library
+Version: 1.0.5
+Release: 1
+Group: System/Libraries
+License: MIT
+URL: http://www.x.org
+Sources:
+    - ftp://ftp.x.org/pub/individual/lib/%{name}-%{version}.tar.bz2
+
+PkgConfigBR:
+    - xorg-macros
+    - x11
+    - xext
+    - xextproto
+    - fontcacheproto
+Configure: configure
+SubPackages:
+    - Name: devel
+      Summary: X.Org X11 libXfontcache development package
+      Group: Development/Libraries
+      Description: X-TrueType font cache extension client development library
+
